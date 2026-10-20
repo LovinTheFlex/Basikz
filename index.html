@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Basikz | La base de tu mejor versión</title>
+<meta name="description" content="Perfumes árabes y de diseñador, decants, tenis, audio y cuidado personal. San Pedro Sula, envíos a todo Honduras.">
+<meta name="theme-color" content="#1E1712">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Basikz · La base de tu mejor versión">
+<meta property="og:description" content="Perfumes, decants, tenis y básicos originales. Pide por WhatsApp.">
+<meta property="og:url" content="https://basikz.store/">
+<meta property="og:image" content="https://basikz.store/assets/logo-cafe.png">
+<link rel="canonical" href="https://basikz.store/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Marcellus&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/app.js" defer></script>
+<script src="assets/hero.js" defer></script>
+<script src="assets/motion.js" defer></script>
+</head>
+<body>
+
+<div class="announce" role="region" aria-label="Avisos">
+  <div class="wrap announce__track"><span>Envíos a todo Honduras</span><span>Perfumes 100% originales</span><span>Preventas con anticipo</span></div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav">
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#perfumes">Perfumes</a><a href="#decants">Decants</a><a href="#preventa">Preventa</a><a href="#zapatos">Zapatos</a><a href="#accesorios">Accesorios</a>
+    </nav>
+    <a class="nav__logo" href="#top" aria-label="Basikz, inicio">
+      <img class="logo logo--cafe" src="assets/wordmark-cafe.png" alt="Basikz" width="1000" height="185">
+    </a>
+    <div class="nav__end">
+      <button class="bag-btn" id="openBag" type="button" aria-label="Abrir bolsa de compra">Bolsa <span class="bag-count" id="bagCount">0</span></button>
+    </div>
+  </div>
+  <nav class="wrap mobile-menu" id="mobileMenu" aria-label="Menú" hidden>
+    <a href="#perfumes">Perfumes</a><a href="#decants">Decants</a><a href="#preventa">Preventa</a><a href="#zapatos">Zapatos</a><a href="#accesorios">Accesorios</a><a href="#pagos">Formas de pago</a><a href="#preguntas">Preguntas</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- PORTADA: una escena al azar por visita, con un producto real (se configura en assets/app.js) -->
+  <section class="hero" id="hero" aria-label="Producto destacado">
+    <div class="hero__stage">
+      <div class="hero__light" aria-hidden="true"></div>
+      <div class="hero__media" id="heroMedia" aria-hidden="true"></div>
+      <p class="hero__eyebrow">Basikz · San Pedro Sula</p>
+      <div class="hero__word" id="heroWord" aria-hidden="true"></div>
+      <div class="hero__product" id="heroProduct" aria-hidden="true"><div class="hero__shadow"></div></div>
+      <div class="hero__info" id="heroInfo"></div>
+      <div class="hero__hint" aria-hidden="true"><span>Desliza</span><i></i></div>
+      <a class="hero__skip" href="#tienda">Ver la tienda</a>
+      <div class="hero__bar" aria-hidden="true"><i id="heroBar"></i></div>
+    </div>
+  </section>
+
+  <section class="band wrap manifesto reveal" id="tienda">
+    <img src="assets/mark-cafe.png" alt="" width="600" height="635">
+    <p class="eyebrow">Basikz · San Pedro Sula</p>
+    <h1 class="h-display">La base de tu mejor versión.</h1>
+    <p class="lead">Perfumes árabes y de diseñador, tenis, audio y cuidado personal. Originales, a buen precio, y lo que no tenemos lo conseguimos por encargo.</p>
+  </section>
+
+  <section class="wrap reveal" aria-label="Categorías">
+    <div class="cats" id="cats"></div>
+  </section>
+
+  <!-- 01 PERFUMES -->
+  <section class="sec" id="perfumes">
+    <div class="wrap">
+      <header class="sec-intro" data-intro="perfumes">
+        <span class="sec-intro__idx">01 · En stock</span>
+        <h2 class="sec-intro__title" data-split>Perfumes</h2>
+        <p class="sec-intro__note">Frascos sellados con su empaque original. Aromas árabes que duran todo el día.</p>
+        <figure class="sec-intro__visual" data-visual="bottle" data-cat="perfumes" aria-hidden="true"></figure>
+      </header>
+      <div class="grid" id="gridPerfumes"></div>
+    </div>
+  </section>
+
+  <!-- 02 DECANTS -->
+  <section class="sec dark" id="decants">
+    <div class="wrap">
+      <header class="sec-intro" data-intro="decants">
+        <span class="sec-intro__idx">02 · Prueba primero</span>
+        <h2 class="sec-intro__title" data-split>Decants</h2>
+        <p class="sec-intro__note">Una porción del mismo perfume original en un atomizador de vidrio de 10 ml. Llevas el aroma que te gusta por una fracción del precio.</p>
+        <figure class="sec-intro__visual" data-visual="row" data-ids="khamrah,yara,yaramoi,9pm" aria-hidden="true"></figure>
+      </header>
+      <div class="dlist" id="listDecants"></div>
+    </div>
+  </section>
+
+  <!-- 03 PREVENTA -->
+  <section class="sec" id="preventa">
+    <div class="wrap">
+      <header class="sec-intro" data-intro="route">
+        <span class="sec-intro__idx">03 · Solo por encargo</span>
+        <h2 class="sec-intro__title" data-split>Preventa</h2>
+        <p class="sec-intro__note">Perfumería de lujo original, comprada a distribuidores autorizados y con factura. Apartas con un anticipo.</p>
+        <svg class="sec-intro__art art-route" viewBox="0 0 300 210" aria-hidden="true">
+          <path class="route-base" d="M258 40 C 214 64, 168 76, 140 112 S 74 172, 42 172"/>
+          <path class="route-line" id="routeLine" d="M258 40 C 214 64, 168 76, 140 112 S 74 172, 42 172"/>
+          <circle class="route-dot" cx="258" cy="40" r="5"/>
+          <circle class="route-dot route-dot--end" cx="42" cy="172" r="5"/>
+          <text class="route-label" x="270" y="26" text-anchor="end">Proveedor</text>
+          <text class="route-label" x="30" y="198">San Pedro Sula</text>
+          <g id="routePlane"><path class="route-plane" d="M-9 -6 L11 0 L-9 6 L-5 0 Z"/></g>
+        </svg>
+      </header>
+      <div class="lux" id="gridPreventa"></div>
+      <ol class="steps reveal"><li>Eliges el perfume</li><li>Pagas el anticipo</li><li>Lo pedimos a nuestro proveedor</li><li>Pagas el saldo y lo recibes</li></ol>
+    </div>
+  </section>
+
+  <!-- 04 ZAPATOS -->
+  <section class="sec dark" id="zapatos">
+    <div class="wrap">
+      <header class="sec-intro" data-intro="zapatos">
+        <span class="sec-intro__idx">04 · Pares en stock</span>
+        <h2 class="sec-intro__title" data-split>Zapatos</h2>
+        <p class="sec-intro__note">Pares en stock: talla 9 y 9.5 US. ¿Otro modelo o talla? <button class="txt-btn" type="button" data-ask="shoes">Lo cotizamos por encargo</button></p>
+        <figure class="sec-intro__visual" data-visual="spin" data-cat="zapatos" aria-hidden="true"></figure>
+      </header>
+      <div class="grid grid--two" id="gridZapatos"></div>
+    </div>
+  </section>
+
+  <!-- 05 AUDIO Y CUIDADO PERSONAL -->
+  <section class="sec" id="accesorios">
+    <div class="wrap">
+      <header class="sec-intro" data-intro="accesorios">
+        <span class="sec-intro__idx">05 · Para todos los días</span>
+        <h2 class="sec-intro__title" data-split>Audio y aseo</h2>
+        <p class="sec-intro__note">Audífonos, bocinas y trimmers para el día a día.</p>
+        <figure class="sec-intro__visual" data-visual="float" data-cat="accesorios" aria-hidden="true"></figure>
+      </header>
+      <div class="grid" id="gridAccesorios"></div>
+    </div>
+  </section>
+
+  <section class="band wrap" id="pagos">
+    <div class="sec-head reveal"><div class="stack"><p class="eyebrow">Compra fácil</p><h2 class="h2">Formas de pago</h2></div><p>Arma tu pedido en la bolsa, elige cómo pagar y lo confirmamos por WhatsApp.</p></div>
+    <div class="pay-grid reveal">
+      <div><strong>BAC Credomatic</strong><p>Transferencia o depósito. Los datos aparecen al finalizar tu pedido.</p></div>
+      <div><strong>Ficohsa</strong><p>Transferencia o depósito. Los datos aparecen al finalizar tu pedido.</p></div>
+      <div><strong>PayPal</strong><p>Pago en dólares con tarjeta o saldo PayPal.</p></div>
+      <div><strong>Contra entrega</strong><p>Pagas al recibir, en zonas con entrega disponible.</p></div>
+    </div>
+  </section>
+
+  <section class="band" id="preguntas">
+    <div class="wrap faq">
+      <h2 class="h2 reveal">Preguntas frecuentes</h2>
+      <details open><summary>¿Cómo hago mi pedido?</summary><p>Agrega productos a la bolsa, escribe tus datos, elige la forma de pago y toca "Enviar pedido por WhatsApp". Se abre WhatsApp con tu pedido escrito y te confirmamos disponibilidad.</p></details>
+      <details><summary>¿Los perfumes son originales?</summary><p>Sí. Los compramos en tiendas o distribuidores confiables, sellados, y puedes ver el empaque antes de pagar.</p></details>
+      <details><summary>¿Qué es un decant?</summary><p>Una porción del mismo perfume original pasada a un atomizador de vidrio. Sirve para probar el aroma sin comprar el frasco completo.</p></details>
+      <details><summary>¿Cómo funciona la preventa?</summary><p>Eliges el perfume o los zapatos, pagas un anticipo y hacemos el pedido con nuestro proveedor. Cuando llega, pagas el saldo y lo recibes.</p></details>
+      <details><summary>¿Cómo pago por transferencia?</summary><p>Al finalizar tu pedido verás los datos de la cuenta BAC o Ficohsa. Transfiere el total, usa tu código de pedido como referencia y envíanos el comprobante por WhatsApp.</p></details>
+      <details><summary>¿Cuánto tarda mi pedido?</summary><p>Lo que está en stock sale el mismo día. Las preventas tardan [X días] desde que confirmas tu anticipo.</p></details>
+      <details><summary>¿Hacen cambios o devoluciones?</summary><p>Cambios en productos sellados y sin uso dentro de [X días]. Los decants no tienen cambio una vez entregados.</p></details>
+    </div>
+  </section>
+
+  <section class="cta band" id="contacto">
+    <div class="wrap">
+      <p class="eyebrow">Atención directa</p>
+      <h2 class="h2">¿Buscas algo que no ves aquí? Te lo cotizamos.</h2>
+      <button class="btn btn--light" type="button" data-ask="general">Escribir por WhatsApp</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="brand"><img src="assets/logo-blanco.png" alt="Basikz" width="1200" height="627"><p>La base de tu mejor versión.<br>San Pedro Sula, Honduras.</p></div>
+    <div><b>Tienda</b><a href="#perfumes">Perfumes</a><a href="#decants">Decants</a><a href="#preventa">Preventa</a><a href="#zapatos">Zapatos</a></div>
+    <div><b>Ayuda</b><a href="#pagos">Formas de pago</a><a href="#preguntas">Preguntas</a><a href="#contacto">Contacto</a></div>
+    <div><b>Redes</b><a href="https://www.instagram.com/basikzstore" rel="noopener noreferrer" target="_blank">Instagram</a><a href="https://www.tiktok.com/@basikzstore" rel="noopener noreferrer" target="_blank">TikTok</a></div>
+    <div class="copy">© <span id="year">2026</span> Basikz. Precios en lempiras.</div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Bolsa de compra" role="dialog" aria-modal="true">
+  <div class="drawer__head"><h2>Tu bolsa</h2><button class="x" id="closeBag" type="button" aria-label="Cerrar bolsa">×</button></div>
+  <div class="drawer__body">
+    <div id="bagLines"></div>
+    <form id="orderForm" novalidate autocomplete="on">
+      <fieldset class="fset">
+        <legend>Tus datos</legend>
+        <label class="field" for="fName">Nombre completo<input id="fName" name="name" autocomplete="name" maxlength="60" required></label>
+        <label class="field" for="fCity">Ciudad y colonia<input id="fCity" name="city" autocomplete="address-level2" maxlength="80" required></label>
+        <label class="field" for="fDelivery">Entrega
+          <select id="fDelivery" name="delivery"><option value="sps">Entrega en San Pedro Sula</option><option value="envio">Envío a otra ciudad</option><option value="recoger">Paso a recoger</option></select></label>
+        <label class="field" for="fNotes">Comentarios (tallas, aromas del kit…)<textarea id="fNotes" name="notes" rows="2" maxlength="300"></textarea></label>
+      </fieldset>
+      <fieldset class="fset">
+        <legend>Forma de pago</legend>
+        <div class="opts" id="payOpts"></div>
+        <div class="paybox" id="payBox" hidden></div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="drawer__foot">
+    <div class="total"><span>Total</span><strong id="bagTotal">L 0</strong></div>
+    <p class="note" id="preNote" hidden>Incluye productos en preventa: se apartan con un anticipo y te confirmamos el tiempo de entrega.</p>
+    <p class="warn" id="formWarn" role="alert" hidden></p>
+    <button class="btn btn--solid btn--block" id="sendOrder" type="button">Enviar pedido por WhatsApp</button>
+    <p class="note">El envío se cotiza según tu zona. Te confirmamos disponibilidad antes de cobrar.</p>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
